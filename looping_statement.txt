@@ -1,0 +1,58 @@
+tot=0
+for i in range(95,4,-1):
+    print(i)
+    tot=tot+i
+print("Total is ",tot)
+
+***********************************************
+a="Dipansh"
+for i in range(0,7):
+   print(i,a)
+
+*********************************************** 
+ 
+a="Dipansh"
+print("Length is",len(a))
+for i in range(0,7):
+   print(i,a[i])
+
+*********************************************** 
+   
+a="Dipansh Tailor"
+print("Length is",len(a))
+for i in range(0,len(a)):
+   print(i,a[i])
+
+*********************************************** 
+
+for i in range(1,201):
+    if(i%7==0 and i%9==0):
+        print(f"{i} is devided by 7 and 9") 
+
+***********************************************
+
+for i in range(400,2,-1):
+    if(i%6==0):
+        print(f"{i} is devided by 6")
+
+***********************************************
+
+s="abcdefghijklmnopqrstuvwxyz"
+for i in range(0,len(s)):
+    if(s[i]=='a' or s[i]=='e' or s[i]=='i' or s[i]=='o' or s[i]=='u'):
+        print(f"{s[i]} is vowel ")
+
+***********************************************
+
+s="abcdefghijklmnopqrstuvwxyz"
+for i in range(0,len(s)):
+    if(s[i]!='a' and s[i]!='e' and s[i]!='i' and s[i]!='o' and s[i]!='u'):
+        print(f"{s[i]} is Consonent ")
+
+***********************************************
+
+def has_lowercase(input_string):
+    return any(char.islower() for char in input_string)
+# Example usage:
+my_string = "Hello World!"
+print(has_lowercase(my_string))  # Output: True
